@@ -1,0 +1,70 @@
+/*============================================================== 
+ For Laptop & above all (1650px) 
+ ============================================================== */
+@media (min-width: 1650px) {
+}
+
+/*============================================================== 
+ For Laptop & above all (1370px) 
+ ============================================================== */
+@media (max-width: 1370px) {
+}
+
+/*-- ============================================================== 
+ Small Desktop & above all (1024px) 
+ ============================================================== */
+@media (min-width: 1024px) {
+}
+
+@media (max-width: 1023px) {
+}
+
+/*-- ============================================================== 
+ Ipad & above all(768px) 
+ ============================================================== */
+@media (max-width: 768px) {
+}
+
+/*-- ============================================================== 
+ Ipad(767px) (800px * 600px) and landscape
+ ============================================================== */
+@media (min-width: 600px) and (max-width: 800px) {
+  .btn-group {
+    .btn {
+      font-size: 13px !important;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+}
+
+/*============================================================== 
+ For Desktop & above (1370px) and below (1760px)
+ ============================================================== */
+@media (min-width: 1360px) and (max-width: 1760px) {
+}
+
+@media (min-width: 1172px) and (max-width: 1390px) {
+}
+
+@media (min-width: 1390px) {
+}
+
+@media (min-width: 576px) {
+  .col-sm-12-custom {
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

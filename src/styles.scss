@@ -1,10 +1,165 @@
-/* You can add global styles to this file, and also import other style files */
-html {
-  height: 100%;
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import "~ngx-toastr/toastr.css";
+@import "./assets/scss/variable";
+@import "./assets/scss/responsive.scss";
+@import "./assets/scss/common";
+
+// Global CSS
+html,
+body {
+  font-family: "Roboto", sans-serif !important;
   position: relative;
-  overflow-x: hidden;
 }
 
-* {
-  font-family: 'Courier New', Courier, monospace;
+pre,
+code {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background: $body;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  box-shadow: none !important;
+}
+
+button:focus {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+table {
+  white-space: nowrap;
+}
+
+//Scrollbar
+/* width */
+::-webkit-scrollbar {
+  height: 10px; /* height of horizontal scrollbar ← You're missing this */
+  width: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera- Input type number Arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox - Input type number Arrow */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b1b1b1;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+// App Global CSS
+.hcl-test-page {
+  min-height: calc(100vh - 116px);
+  height: auto;
+}
+
+.btn-group {
+  margin-top: 10px;
+  .btn {
+    border-radius: 0;
+    outline: none;
+    height: 30px;
+    padding: 0 20px 0 20px;
+    border: 2px solid #ff6200;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: $hcl-test-button-font-size;
+    font-weight: bold;
+    background-color: #fff;
+    color: #ff6200;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .btn:focus {
+    box-shadow: none !important;
+  }
+  .btn2 {
+    border-radius: 0;
+    outline: none;
+    height: 30px;
+    padding: 0 20px 0 20px;
+    border: 2px solid #007ab7;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: $hcl-test-button-font-size;
+    font-weight: bold;
+    background-color: #fff;
+    color: #007ab7;
+    &:last-child {
+      margin-right: 0;
+      border: none;
+      color: #007ab7;
+    }
+  }
+  .active {
+    background: $hcl-test-button-active-background;
+    color: $hcl-test-button-active-color;
+  }
+  .active2 {
+    color: $hcl-test-button-active2-color;
+  }
+  .disabled {
+    border: none !important;
+    background: $hcl-test-button-disabled-background;
+    cursor: not-allowed;
+    color: $hcl-test-button-disabled-color;
+  }
 }
